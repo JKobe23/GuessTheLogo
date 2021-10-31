@@ -4,6 +4,9 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/bo-oy/AndroidStudioProjects/GuessTheLogo/app/src/main/res/layout/activity_main.xml" value="0.12771739130434784" />
+        <entry key="..\:/Users/bo-oy/AndroidStudioProjects/GuessTheLogo/app/src/main/res/layout/activity_main_easy.xml" value="0.1213768115942029" />
+        <entry key="..\:/Users/bo-oy/AndroidStudioProjects/GuessTheLogo/app/src/main/res/layout/activity_main_hard.xml" value="0.1213768115942029" />
+        <entry key="..\:/Users/bo-oy/AndroidStudioProjects/GuessTheLogo/app/src/main/res/layout/activity_main_neutral.xml" value="0.1213768115942029" />
       </map>
     </option>
   </component>

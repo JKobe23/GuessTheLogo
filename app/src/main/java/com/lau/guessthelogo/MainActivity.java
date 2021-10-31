@@ -16,24 +16,21 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        btn1 = (Button) findViewById(R.id.btn1);
-        btn2 = (Button) findViewById(R.id.btn2);
-        btn3 = (Button) findViewById(R.id.btn3);
     }
 
-    public void DifficultySelect(View view) {
-        Button clicked = (Button) view;
-        Intent shift = new Intent();
+    public void goEasy(View view) {
+        Intent i1 = new Intent(getApplicationContext(), MainActivityEasy.class);
+        startActivity(i1);
+    }
 
-        if(clicked == btn1) {
-
-        }
-        else if(clicked == btn2) {
-
-        }
-        else {
-
-        }
+    public void goNeutral(View view) {
+        Intent i2 = new Intent(getApplicationContext(), MainActivityNeutral.class);
+        startActivity(i2);
 
     }
+    public void goHard(View view) {
+        Intent i3 = new Intent(getApplicationContext(), MainActivityHard.class);
+        startActivity(i3);
+    }
+
 }
