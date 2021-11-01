@@ -21,6 +21,8 @@
         <activity android:name = ".MainActivityEasy" />
         <activity android:name = ".MainActivityNeutral" />
         <activity android:name = ".MainActivityHard" />
+        <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".MainActivity"/>
     </application>
+    <uses-permission android:name="android.permission.INTERNET"/>
 
 </manifest>
