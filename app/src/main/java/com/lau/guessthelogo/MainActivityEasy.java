@@ -35,6 +35,7 @@ public class MainActivityEasy extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_easy);
 
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         img = (ImageView) findViewById(R.id.easylogo);
         btn1 = (Button) findViewById(R.id.easybtn1);
         btn2 = (Button) findViewById(R.id.easybtn2);
@@ -146,6 +147,12 @@ public class MainActivityEasy extends AppCompatActivity {
             displayChoices();
         }
         else Toast.makeText(this, "Incorrect", Toast.LENGTH_SHORT).show();
+    }
+    public boolean onOptionsItemSelected(MenuItem item) {
+        Intent goBack = new Intent(getApplicationContext(), MainActivity.class);
+        startActivityForResult(goBack,0);
+        return true;
+
     }
 }
 

@@ -41,6 +41,7 @@ public class MainActivityHard extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_hard);
 
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         img = (ImageView) findViewById(R.id.hardlogo);
         btn1 = (Button) findViewById(R.id.hardbtn1);
         btn2 = (Button) findViewById(R.id.hardbtn2);
@@ -175,6 +176,12 @@ public class MainActivityHard extends AppCompatActivity {
             Score--;
             txt.setText("Score: "+Score);
         }
+
+    }
+    public boolean onOptionsItemSelected(MenuItem item) {
+        Intent goBack = new Intent(getApplicationContext(), MainActivity.class);
+        startActivityForResult(goBack,0);
+        return true;
 
     }
 }

@@ -36,6 +36,7 @@ public class MainActivityNeutral extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_neutral);
 
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         img = (ImageView) findViewById(R.id.neutrallogo);
         btn1 = (Button) findViewById(R.id.neubtn1);
         btn2 = (Button) findViewById(R.id.neubtn2);
@@ -151,6 +152,12 @@ public class MainActivityNeutral extends AppCompatActivity {
             Score--;
             txt.setText("Score: "+Score);
         }
+
+    }
+    public boolean onOptionsItemSelected(MenuItem item) {
+        Intent goBack = new Intent(getApplicationContext(), MainActivity.class);
+        startActivityForResult(goBack,0);
+        return true;
 
     }
 }
